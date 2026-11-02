@@ -1,0 +1,105 @@
+.mainTtsContainer{
+    display: flex;
+    min-height: 100%;
+}
+
+.avatarContainer{
+    width: 35vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dividerContainer{
+    display: flex;
+    width: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider{
+    height: 80%;
+    width: 4px;
+    background-color: #bc9d7f;
+}
+
+.ttsContainer{
+    display: flex;
+    width: 55vw;
+    align-items: center;
+}
+
+.centerTtsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#victor, #tts {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+#victor{
+    color: white;
+    font-size: 6.5rem;
+}
+
+#tts{
+    color: #bc9d7f;
+    font-size: 6.5rem;
+}
+
+.titleContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.inputsContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.playBtn{
+    width: 50px;
+    height: 50px;
+    background-color: #521e20;
+    border-radius: 1000px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.playBtn {
+    color: white;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid #bc9d7f;
+    outline: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.input:focus {
+    border-bottom-color: #e5b58b;
+}
+
+.avatar{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1000px;
+}

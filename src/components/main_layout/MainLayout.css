@@ -1,0 +1,7 @@
+.mainLayoutContainer{
+    display: grid;
+    grid-template-rows: 20vh 1fr 20vh;
+    grid-template-columns: 1;
+    min-height: 100vh;
+    background-color: #171211;
+}
