@@ -1,7 +1,7 @@
 import '../tts_page/TtsPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { getAudio } from './TtsPage.Service';
 
 export function TtsPage(){
@@ -44,13 +44,13 @@ export function TtsPage(){
                 {isPlaying ?
                     <video
                         className="avatar"
-                        src="src/assets/Victor2.mp4"
+                        src="/assets/Victor2.mp4"
                         autoPlay
                         loop
                         muted
                         playsInline
                     /> : 
-                    <img className='avatar' src="src\assets\Victor.png" alt="Lord AFOOT himself" />
+                    <img className='avatar' src="/assets/Victor.png" alt="Lord AFOOT himself" />
                 }
             </section>
 
