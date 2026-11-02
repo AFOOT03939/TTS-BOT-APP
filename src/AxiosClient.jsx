@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-    baseURL: "https://localhost:7179/api",
+    baseURL: "https://victortts-api.onrender.com/api",
     headers: {
         "Content-Type": "application/json"
     }
