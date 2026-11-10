@@ -1,29 +1,36 @@
-.mainTtsContainer{
+.mainTtsContainer {
     display: flex;
     min-height: 100%;
 }
 
-.avatarContainer{
+.avatarContainer {
     width: 35vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.dividerContainer{
+.avatar {
+    width: 45vh;
+    height: 45vh;
+    object-fit: cover;
+    border-radius: 1000px;
+}
+
+.dividerContainer {
     display: flex;
     width: 5vw;
     justify-content: center;
     align-items: center;
 }
 
-.divider{
+.divider {
     height: 80%;
     width: 4px;
     background-color: #bc9d7f;
 }
 
-.ttsContainer{
+.ttsContainer {
     display: flex;
     width: 55vw;
     align-items: center;
@@ -35,44 +42,30 @@
     gap: 50px;
 }
 
+.titleContainer {
+    display: flex;
+    gap: 10px;
+}
+
 #victor, #tts {
     margin: 0;
     padding: 0;
     line-height: 1;
 }
 
-#victor{
+#victor {
     color: white;
-    font-size: 6.5rem;
+    font-size: 7.5vw;
 }
 
-#tts{
+#tts {
     color: #bc9d7f;
-    font-size: 6.5rem;
+    font-size: 7.5vw;
 }
 
-.titleContainer{
+.inputsContainer {
     display: flex;
     gap: 10px;
-}
-
-.inputsContainer{
-    display: flex;
-    gap: 10px;
-}
-
-.playBtn{
-    width: 50px;
-    height: 50px;
-    background-color: #521e20;
-    border-radius: 1000px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.playBtn {
-    color: white;
 }
 
 .input {
@@ -97,9 +90,96 @@
     border-bottom-color: #e5b58b;
 }
 
-.avatar{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+.playBtn {
+    width: 50px;
+    height: 50px;
+    background-color: #521e20;
     border-radius: 1000px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.playBtn {
+    color: white;
+}
+
+@media (min-width: 1366px) {
+    .mainTtsContainer {
+        margin-left: 150px;
+    }
+
+    .avatar {
+        width: 45vh;
+        height: 45vh;
+        object-fit: cover;
+        border-radius: 1000px;
+    }
+
+    #victor {
+        color: white;
+        font-size: 8.5rem;
+    }
+
+    .centerTtsContainer {
+        gap: 75px;
+    }
+
+    #tts {
+        color: #bc9d7f;
+        font-size: 8.5rem;
+    }
+
+    .input {
+        font-size: 20px;
+    }
+
+    .input::placeholder {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .mainTtsContainer { 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatarContainer {
+        width: 100vw;
+        justify-content: center;
+
+    }
+
+    .avatar {
+        width: 30vh;
+        height: 30vh;
+        object-fit: cover;
+        border-radius: 1000px;
+    }
+
+    .dividerContainer {
+        padding: 3vh;
+
+    }
+
+     .ttsContainer {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .centerTtsContainer {
+        width: 90%;
+        align-items: center;
+    }
+
+    #victor {
+        color: white;
+        font-size: 15vw;
+    }
+
+    #tts {
+        color: #bc9d7f;
+        font-size: 15vw;
+    }
 }
